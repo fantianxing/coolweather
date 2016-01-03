@@ -25,17 +25,18 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper {
 		// TODO Auto-generated method stub
 		
 	}
-	public static final String CREATE_PROVINCE = "create province ("
-			+ "id integer primary key autoincrement,"
+	public static final String CREATE_PROVINCE = "create table Province ("
+			+ "id integer primary key ,"
 			+ "province_name text,"
 			+ "province_code integer) ";
-	public static final String CREATE_CITY = "create city ("
-			+ " id integer primary key autoincrement,"
-			+ " city_name text ,"
-			+ " city_code text ,"
+	public static final String CREATE_CITY = "create table City ("
+			+ " id integer primary key , "
+			+ " city_name text, "
+			+ " city_code text, "
 			+ "province_id integer)";
-	public static final String CREATE_COUNTY ="create county ("
-			+  "id integer primaty key autoincrement, "
+	public static final String CREATE_COUNTY ="create table County ("
+			+ "id integer primaty key, "
 			+ "county_name text, "
-			+ "county_code text,)";
+			+ "county_code text, " 
+			+ "city_id integer)";
 }

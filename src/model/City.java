@@ -8,7 +8,7 @@ public class City {
 	public int getprovinceId() {
 		return provinceId;
 	}
-	public void setprocinceId(int provinceId) {
+	public void setProcinceId(int provinceId) {
 		this.provinceId = provinceId;
 	}
 	public int getId() {
