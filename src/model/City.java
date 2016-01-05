@@ -3,8 +3,9 @@ package model;
 public class City {
 	private int id;
 	private String cityName;
-	
+	private String cityCode;
 	private int provinceId;
+	
 	public int getprovinceId() {
 		return provinceId;
 	}
@@ -29,5 +30,5 @@ public class City {
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
-	private String cityCode;
+	
 }
